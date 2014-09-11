@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SwiftTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ate-tY-QD4">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="600"/>
+                                <color key="backgroundColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTu-fG-QPD">
+                                <rect key="frame" x="310" y="0.0" width="290" height="600"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040699958801" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEw-Cg-wSf">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Hs1-B8-MLE"/>
+                                    <constraint firstAttribute="height" constant="30" id="WBn-3V-KYv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Toggle">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleViewsConstraints:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="967-GV-iWY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="hEw-Cg-wSf" secondAttribute="centerY" id="5zB-Nc-3ty"/>
+                            <constraint firstItem="Ate-tY-QD4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" placeholder="YES" id="8oj-TK-50U"/>
+                            <constraint firstAttribute="centerX" secondItem="hEw-Cg-wSf" secondAttribute="centerX" id="CRT-JG-5zS"/>
+                            <constraint firstItem="MTu-fG-QPD" firstAttribute="width" secondItem="Ate-tY-QD4" secondAttribute="width" placeholder="YES" id="Vlx-P6-tzv"/>
+                            <constraint firstItem="MTu-fG-QPD" firstAttribute="leading" secondItem="Ate-tY-QD4" secondAttribute="trailing" constant="20" placeholder="YES" id="c2P-IA-EMw"/>
+                            <constraint firstAttribute="trailing" secondItem="MTu-fG-QPD" secondAttribute="trailing" placeholder="YES" id="j3N-ak-bR7"/>
+                            <constraint firstItem="MTu-fG-QPD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" placeholder="YES" id="knH-3T-sGR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MTu-fG-QPD" secondAttribute="bottom" placeholder="YES" id="kri-Xy-NG8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ate-tY-QD4" secondAttribute="bottom" placeholder="YES" id="sxD-hL-itu"/>
+                            <constraint firstItem="Ate-tY-QD4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" placeholder="YES" id="tCB-hn-F4I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="MTu-fG-QPD" id="q22-LP-RYS"/>
+                        <outlet property="greenView" destination="Ate-tY-QD4" id="cdt-CK-dWR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
